@@ -1,0 +1,174 @@
+
+h1 {
+    font-size: 64px;
+    line-height: 78px;
+    margin-top: 140px;
+}
+h2 {
+    font-weight: bold;
+}
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+p {
+    font-size: 18px;
+    line-height: 30px;
+}
+.main_container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* --------------- header --------------- */
+
+header {
+    height: 768px;
+    background-image: url(../images/bg-l.jpg);
+    padding: 87px 11.5%;
+}
+.navbar-nav {
+    width: 529px;
+}
+.nav-link {
+    padding: 0px 0px;
+}
+header>p {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 18px;
+}
+header>a {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 90px;
+}
+
+/* --------------- about --------------- */
+
+.about {
+    padding: 92px 165px 119px;
+}
+.about p:nth-child(2) {
+    margin-top: 76px;
+}
+.about p:nth-child(3) {
+    margin-top: 30px;
+}
+
+/* --------------- skills --------------- */
+
+.skills {
+    padding: 94px 165px 145px;
+}
+.skills .row {
+    margin-top: 86px;
+}
+.my_progress {
+    height: 340px;
+}
+.table {
+    font-size: 18px;
+}
+tr {
+    height: 45px;
+}
+thead tr {
+    height: 90px;
+}
+.table th {
+    width: 189px;
+}
+.table td {
+    width: 446px;
+}
+.progress {
+    height: 24px;
+}
+
+/* --------------- portfolio --------------- */
+
+.portfolio {
+    padding: 93px 165px 145px;
+}
+.portfolio h3 {
+    margin-top: 79px;
+}
+.portfolio>div {
+    width: 100%;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.my_projects_description {
+    max-width: 350px;
+    padding-top: 7px;
+}
+.my_projects {
+    height: 403px;
+    width: 635px;
+    margin-left: 40px;
+}
+.block_two {
+    margin-left: 20px;
+}
+.navigation {
+    position: absolute;
+    bottom: 0px;
+}
+.navigation a:first-child {
+    margin: 0px 23px 0px 29px;
+}
+
+/* --------------- footer --------------- */
+
+footer {
+    padding: 93px 165px 75px;
+}
+.contacts {
+    margin-top: 43px;
+}
+.contacts .col-lg-4 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.contacts a {
+    font-size: 18px;
+    line-height: 22px;
+}
+.contacts .telephone {
+    font-size: 15px;
+    line-height: 18px;
+}
+.to_top {
+    height: 100px;
+    position: relative;
+}
+.to_top a {
+    position: absolute;
+    right: 13px;
+    bottom: 0px;
+}
+
+/* --------------- media --------------- */
+
+@media screen and (max-width: 1460px) {
+    header {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .portfolio {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .portfolio {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}

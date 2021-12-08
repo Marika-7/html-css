@@ -1,0 +1,146 @@
+h1 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 45px;
+}
+h2 {
+    font-weight: 600;
+}
+h3 {
+    font-weight: 500;
+    font-size: 14px;
+}
+p {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+/* --------------- header --------------- */
+
+header {
+    height: 275px;
+    background-image: url(../images/bg-m.jpg);
+    padding: 31px 19px;
+}
+.navbar-brand {
+    margin: 0px;
+}
+header>p {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 6px;
+}
+header>a {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 25px;
+}
+.navbar {
+    height: 39px;
+}
+.navbar-dark .navbar-toggler {
+    border: none;
+    outline: none;
+}
+.navbar-toggler {
+    left: 0px;
+    top: 0px;
+}
+
+/* --------------- about --------------- */
+
+.about {
+    padding: 25px 29px 25px 34px;
+}
+.about p:nth-child(2) {
+    margin-top: 19px;
+}
+.about p:nth-child(3) {
+    margin-bottom: 0px;
+}
+
+/* --------------- skills --------------- */
+
+.skills {
+    padding: 24px 33px;
+}
+
+.skills .row {
+    margin-top: 25px;
+}
+.my_progress {
+    height: 270px;
+    margin-top: 26px;
+}
+.table {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+tr {
+    height: 31px;
+}
+tr:nth-child(2), tr:nth-child(4) {
+    height: 47px;
+}
+thead tr {
+    height: 59px;
+}
+.table th {
+    width: 98px;
+}
+.table td {
+    width: 211px;
+}
+.progress {
+    height: 18px;
+}
+
+/* --------------- portfolio --------------- */
+
+.portfolio {
+    padding: 25px 33px 23px;
+    margin: 0 auto;
+    width: 375px;
+}
+.portfolio h3 {
+    margin-top: 10px;
+}
+.my_projects_description {
+    margin-top: 8px;
+}
+.my_projects {
+    width: 309px;
+    height: 195px;
+    margin-top: 27px;
+}
+.navigation {
+    display: none;
+}
+
+/* ---------------footer--------------- */
+
+footer {
+    padding: 26px 32px 30px 32px;
+}
+.contacts {
+    margin-top: 17px;
+}
+.contacts .col-lg-4 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.contacts a {
+    font-size: 14px;
+    line-height: 17px;
+}
+.contacts .email {
+    padding-top: 10px;
+    height: 33px;
+}
+.contacts .telephone {
+    font-size: 12px;
+    line-height: 17px;
+}
+.to_top {
+    padding-top: 15px;
+}

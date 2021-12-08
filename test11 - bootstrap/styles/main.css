@@ -1,0 +1,101 @@
+@import "mobstyle.css" screen and (max-width: 991px);
+@import "bigstyle.css" screen and (min-width: 992px);
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #333333;
+}
+h2 {
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 29px;
+}
+h3 {
+   line-height: 25px;
+}
+p {
+   text-align: justify;
+}
+
+/* --------------- header --------------- */
+
+header {
+    color: #fff;
+}
+.navbar {
+    width: 100%;
+    padding: 0px;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    
+ }
+ .nav-link {
+    font-size: 18px;
+    line-height: 22px;
+ }
+ .active {
+    font-weight: bold;
+ }
+ header>a {
+     text-decoration: underline;
+ }
+
+ /* --------------- skills --------------- */
+
+.skills {
+    background: #FFFAF2;
+}
+
+.table {
+    line-height: 25px;
+    color: #333333;
+}
+.table th, .table td {
+    padding: 0px;
+}
+th {
+    font-weight: 600;
+}
+.table thead th, .table tbody th {
+    vertical-align: top;
+}
+.progress {
+    background: #F5D6AB;
+    border-radius: 0;
+}
+.progress-bar {
+    background: #C66C49;
+}
+
+/* --------------- portfolio --------------- */
+
+.block_one, .block_two  {
+    height: 100%;
+}
+
+/* --------------- footer --------------- */
+
+footer {
+    background: #FFFAF2;
+}
+footer .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.contacts {
+    width: 100%;
+}
+.contacts a {
+    height: 36px;
+    color: #333333;
+}
+.col-1 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.to_top a {
+    height: 21px;
+}
