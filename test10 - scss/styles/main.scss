@@ -1,0 +1,142 @@
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+
+%change-width {
+    transition: width $time, left $time;
+}
+
+.main {
+    @include box (100vw, 100vh);
+    padding-top: 100px;
+    background-color: $background-color;
+    font-family: Arial, sans-serif;}
+.social {
+    @include box(100%, $h-block);
+    background-color: $block-color;
+    border: 1px solid $border-color;
+    display: flex;
+    &__element {
+        height: $h-block;
+        border-right: 1px solid $block-color;
+        display: flex;
+    }
+    &__icon {
+        @include box(80px, $h-block);
+        background-color: $element-color;
+        font-family: 'icomoon_1';
+        color: $white;
+        text-align: center;
+        line-height: 190px;
+        position: relative;
+        @extend %change-width;
+        display: flex;
+        &::before {
+            @include box(80px, $h-block);
+            display: block;
+            font-size: 30px;
+            position: absolute;
+            left: 0px;}
+        &::after {
+            @include box(0px, $h-block);
+            display: block;
+            font-size: 48px;
+            @extend %change-width;
+            overflow: hidden;
+            position: absolute;
+            left: 80px;
+        }
+        &_twitter {
+            &::before {
+                content: '\e905';
+            }
+            &::after {
+                content: '\e905';
+                background: $tw-color;
+            }
+        }
+        &_facebook {
+            &::before {
+                content: '\e901';
+            }
+            &::after {
+                content: '\e901';
+                background: $fb-color;
+            }
+        }
+        &_linkedin {
+            &::before {
+                content: '\e903';
+            }
+            &::after {
+                content: '\e903';
+                background: $li-color;
+            }
+        }
+        &_instagram {
+            &::before {
+                content: '\e902';
+            }
+            &::after {
+                content: '\e902';
+                background: $ins-color;
+            }
+        }
+        &_youtube {
+            &::before {
+                content: '\e906';
+            }
+            &::after {
+                content: '\e906';
+                background: $yt-color;
+            }
+        }
+        &_tumblr {
+            &::before {
+                content: '\e904';
+            }
+            &::after {
+                content: '\e904';
+                background: $tum-color;
+            }
+        }
+        &_dribbble {
+            &::before {
+                content: '\e900';
+            }
+            &::after {
+                content: '\e900';
+                background: $dr-color;
+            }
+        }
+    }
+    &__element:hover &__icon {
+        &::after {
+            width: 80px;
+            left: 0px;
+        }
+    }
+    &__about {
+        @include box(0px, $h-block);
+        background-color: $white;
+        color: $black;
+        overflow: hidden;
+        @extend %change-width;
+    }
+    &__element:hover &__about {
+        width: 370px;
+    }
+    &__name {
+        width: 340px;
+        margin: 47px 10px 0px;
+        font-size: 40px;
+        font-weight: normal;
+    }
+    &__text {
+        width: 340px;
+        margin: 8px 10px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

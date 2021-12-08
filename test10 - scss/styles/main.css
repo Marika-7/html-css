@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'icomoon_1';
+  src: url("./fonts/icomoon_1.ttf");
+}
+
+.social__icon, .social__icon::after, .social__about {
+  -webkit-transition: width 1s, left 1s;
+  transition: width 1s, left 1s;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  background-color: #f57260;
+  font-family: Arial, sans-serif;
+}
+
+.social {
+  width: 100%;
+  height: 200px;
+  background-color: #59afc8;
+  border: 1px solid #94989b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__element {
+  height: 200px;
+  border-right: 1px solid #59afc8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__icon {
+  width: 80px;
+  height: 200px;
+  background-color: #6dc3dc;
+  font-family: 'icomoon_1';
+  color: #ffffff;
+  text-align: center;
+  line-height: 190px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__icon::before {
+  width: 80px;
+  height: 200px;
+  display: block;
+  font-size: 30px;
+  position: absolute;
+  left: 0px;
+}
+
+.social__icon::after {
+  width: 0px;
+  height: 200px;
+  display: block;
+  font-size: 48px;
+  overflow: hidden;
+  position: absolute;
+  left: 80px;
+}
+
+.social__icon_twitter::before {
+  content: '\e905';
+}
+
+.social__icon_twitter::after {
+  content: '\e905';
+  background: -webkit-gradient(linear, left top, left bottom, from(#76e0f8), to(#57cbf2));
+  background: linear-gradient(#76e0f8, #57cbf2);
+}
+
+.social__icon_facebook::before {
+  content: '\e901';
+}
+
+.social__icon_facebook::after {
+  content: '\e901';
+  background: -webkit-gradient(linear, left top, left bottom, from(#5285be), to(#3466a3));
+  background: linear-gradient(#5285be, #3466a3);
+}
+
+.social__icon_linkedin::before {
+  content: '\e903';
+}
+
+.social__icon_linkedin::after {
+  content: '\e903';
+  background: -webkit-gradient(linear, left top, left bottom, from(#02a6cc), to(#028abc));
+  background: linear-gradient(#02a6cc, #028abc);
+}
+
+.social__icon_instagram::before {
+  content: '\e902';
+}
+
+.social__icon_instagram::after {
+  content: '\e902';
+  background: -webkit-gradient(linear, left top, left bottom, from(#7bbe19), to(#3d922a));
+  background: linear-gradient(#7bbe19, #3d922a);
+}
+
+.social__icon_youtube::before {
+  content: '\e906';
+}
+
+.social__icon_youtube::after {
+  content: '\e906';
+  background: -webkit-gradient(linear, left top, left bottom, from(#db1829), to(#c7131f));
+  background: linear-gradient(#db1829, #c7131f);
+}
+
+.social__icon_tumblr::before {
+  content: '\e904';
+}
+
+.social__icon_tumblr::after {
+  content: '\e904';
+  background: -webkit-gradient(linear, left top, left bottom, from(#dd3a6f), to(#ea71a4));
+  background: linear-gradient(#dd3a6f, #ea71a4);
+}
+
+.social__icon_dribbble::before {
+  content: '\e900';
+}
+
+.social__icon_dribbble::after {
+  content: '\e900';
+  background: -webkit-gradient(linear, left top, left bottom, from(#243956), to(#2e4d69));
+  background: linear-gradient(#243956, #2e4d69);
+}
+
+.social__element:hover .social__icon::after {
+  width: 80px;
+  left: 0px;
+}
+
+.social__about {
+  width: 0px;
+  height: 200px;
+  background-color: #ffffff;
+  color: #000000;
+  overflow: hidden;
+}
+
+.social__element:hover .social__about {
+  width: 370px;
+}
+
+.social__name {
+  width: 340px;
+  margin: 47px 10px 0px;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.social__text {
+  width: 340px;
+  margin: 8px 10px;
+  font-size: 14px;
+  line-height: 21px;
+}
+/*# sourceMappingURL=main.css.map */
